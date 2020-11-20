@@ -12,8 +12,8 @@ bot.on('voiceStateUpdate', (oldState, newState) => {
         if(newState.id === "260158083051814923" && newState.channelID === "755094298017398828"){
             newState.member.voice.channel.join()
                 .then(connection => {
-                    setTimeout(async () => {
-                        const audio = await connection.play("./obi-wan.mp3");
+                    setTimeout(() => {
+                        const audio = connection.play("./obi-wan.mp3");
                         audio.on("finish", end => {
                             newState.member.voice.channel.leave();
                         })   
