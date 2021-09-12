@@ -1,7 +1,7 @@
 const config = require('./config.json');
 const discord = require('discord.js');
 const bot = new discord.Client();
-const token = config["ODc1NTI2NDg4MTAxODkyMTQ2.YRWzlQ.juo-KzukMjfCDhbfrq74rzI_yPA"];
+const token = config["ODc1NTI2NDg4MTAxODkyMTQ2.YRWzlQ.2ZYpdPrhyc7CG1E-NTv1jalnn4I"];
 
 bot.on('ready', () => {
     console.info(`Logged in as ${bot.user.tag}!`);
