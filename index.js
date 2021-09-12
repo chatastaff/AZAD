@@ -1,7 +1,7 @@
 const config = require('./config.json');
 const discord = require('discord.js');
 const bot = new discord.Client();
-const token = config["bot-token"];
+const token = config["ODc1NTI2NDg4MTAxODkyMTQ2.YRWzlQ.juo-KzukMjfCDhbfrq74rzI_yPA"];
 
 bot.on('ready', () => {
     console.info(`Logged in as ${bot.user.tag}!`);
@@ -9,7 +9,7 @@ bot.on('ready', () => {
 
 bot.on('voiceStateUpdate', (oldState, newState) => {
     if(oldState.deaf === newState.deaf && oldState.mute === newState.mute && oldState.streaming === newState.streaming){
-        if(newState.id === "260158083051814923" && newState.channelID === "755094298017398828"){
+        if(newState.id === "886730190657560586" && newState.channelID === "886730096608690240"){
             newState.member.voice.channel.join()
                 .then(connection => {
                     setTimeout(() => {
